@@ -32,7 +32,7 @@ function NavBar() {
     return (
         <div className="navbar"> 
             <nav style={stylesNavbar}>
-                <img src={logo} style={stylesLogoNav} />
+                <img src={logo} style={stylesLogoNav} alt="Logo" />
                 <ul style={stylesUl}>
                     <li style={stylesLi}>
                         <a style={stylesA} href="/">Home</a>
