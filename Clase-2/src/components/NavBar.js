@@ -1,12 +1,14 @@
 import React from 'react'
 import logo from '../logo.svg'
 import '../App.css'
+import CartWidget from './cartWidget.js'
 
-function NavBar() {
+const NavBar = () => {
     const stylesNavbar = {
         backgroundColor: '#333',
         display: 'flex',
         justifyContent: 'space-between',
+        width: '100%',
     }
     
     const stylesLogoNav = {
@@ -26,7 +28,7 @@ function NavBar() {
     const stylesA = {
         color: '#fff',
         textDecoration: 'none',
-        padding: '10px',
+        padding: '0px 10px',
         fontSize: '20px',
     }
     return (
@@ -42,6 +44,11 @@ function NavBar() {
                     </li>
                     <li style={stylesLi}>
                         <a style={stylesA} href="/contact">Contact</a>
+                    </li>
+                    <li style={stylesLi}>
+                        <a style={stylesA} href="/cart">
+                        <CartWidget />
+                        </a>
                     </li>
                 </ul>
             </nav> 
