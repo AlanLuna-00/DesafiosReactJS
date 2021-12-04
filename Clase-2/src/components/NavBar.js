@@ -1,38 +1,43 @@
 import React from 'react'
 import logo from '../logo.svg'
 import '../App.css'
-import CartWidget from './cartWidget.js'
+import CartWidget from './CartWidget.js'
+
+const stylesNavbar = {
+    backgroundColor: '#333',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    alingItems: 'center',
+}
+
+const stylesLogoNav = {
+    width: '60px',
+    height: '60px',
+}
+
+const stylesUl = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alingItems: 'center',
+}
+
+const stylesLi = {
+    listStyle: 'none',
+}
+
+const stylesA = {
+    color: '#fff',
+    textDecoration: 'none',
+    padding: '0px 10px',
+    fontSize: '20px',
+}
+
+
 
 const NavBar = () => {
-    const stylesNavbar = {
-        backgroundColor: '#333',
-        display: 'flex',
-        justifyContent: 'space-between',
-        width: '100%',
-    }
-    
-    const stylesLogoNav = {
-        width: '60px',
-        height: '60px',
-    }
-
-    const stylesUl = {
-        display: 'flex',
-        justifyContent: 'space-between',
-    }
-
-    const stylesLi = {
-        listStyle: 'none',
-    }
-
-    const stylesA = {
-        color: '#fff',
-        textDecoration: 'none',
-        padding: '0px 10px',
-        fontSize: '20px',
-    }
     return (
-        <div className="navbar"> 
+        <div className="navbar" style={{margin:0, padding:0}}> 
             <nav style={stylesNavbar}>
                 <img src={logo} className="logoNav" style={stylesLogoNav} alt="Logo" />
                 <ul style={stylesUl}>

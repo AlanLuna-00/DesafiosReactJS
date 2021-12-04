@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const CartWidget = () => {
-    const stylesA = {
+    const stylesWidgetCart = {
         color: 'white',
         fontSize: '25px',
         padding: '0',
         marginTop: '5px'
     }
     return ( 
-            <FontAwesomeIcon icon={faShoppingCart} style={stylesA} />
+            <FontAwesomeIcon icon={faShoppingCart} style={stylesWidgetCart} />
     )
 }
 
