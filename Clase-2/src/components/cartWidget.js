@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const CartWidget = () => {
     const stylesWidgetCart = {
         color: 'white',
-        fontSize: '25px',
+        fontSize: '26px',
         padding: '0',
         marginTop: '5px'
     }
