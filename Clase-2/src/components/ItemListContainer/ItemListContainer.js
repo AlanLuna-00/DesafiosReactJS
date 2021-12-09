@@ -1,6 +1,7 @@
 import React from 'react'
-import '../App.css'
-import {database} from '../database/database'
+import '../../App.css'
+import {database} from '../../database/database'
+import ItemList from './ItemList'
 
 const ItemListContainer = () => {
     const API = new Promise((resolve, reject) => {
@@ -17,10 +18,10 @@ const ItemListContainer = () => {
           console.log(err);
         })
     return (
-        <div className="itemListContainer card shadow w-25 m-3">
-            <ul>
-                
-            </ul>
+        <div className="itemListContainer row m-3 container d-flex justify-content-center">
+            <>
+                <ItemList />
+            </> 
         </div>
     )
 }
