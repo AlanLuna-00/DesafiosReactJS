@@ -2,6 +2,7 @@ import React from 'react'
 import '../../App.css'
 import {database} from '../../database/database'
 import ItemList from './ItemList'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ItemListContainer = () => {
     const API = new Promise((resolve, reject) => {
@@ -18,7 +19,7 @@ const ItemListContainer = () => {
           console.log(err);
         })
     return (
-        <div className="itemListContainer row m-3 container d-flex justify-content-center">
+        <div className="container row m-3 d-flex justify-content-center align-items-center">
             <>
                 <ItemList />
             </> 
