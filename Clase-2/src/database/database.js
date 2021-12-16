@@ -4,6 +4,8 @@ export const database = [
         "id": 1,
         "title": "Nike Air Zoom Pegasus",
         "category": "Deportiva",
+        "description": "Zapatilla deportiva, de Nike",
+        "stock": 14,
         "image": "https://raw.githubusercontent.com/AlanLuna-00/ProyectoFinal-JS/master/images/image1.jpg"
     },
     {
@@ -11,6 +13,8 @@ export const database = [
         "id": 2,
         "title": "Nike Air Max",
         "category": "Informal",
+        "description": "Zapatilla deportiva, de Nike",
+        "stock": 8,
         "image": "https://raw.githubusercontent.com/AlanLuna-00/ProyectoFinal-JS/master/images/image2.jpg"
     },
     {
@@ -18,6 +22,8 @@ export const database = [
         "id": 3,
         "title": "Nike Max Janoski 2",
         "category": "Deportiva",
+        "description": "Zapatilla deportiva, de Nike",
+        "stock": 22,
         "image": "https://raw.githubusercontent.com/AlanLuna-00/ProyectoFinal-JS/master/images/image3.jpg"
     },
     {
@@ -25,6 +31,8 @@ export const database = [
         "id": 4,
         "title": "Nike Revolution 5",
         "category": "Deportiva",
+        "description": "Zapatilla deportiva, de Nike",
+        "stock": 30,
         "image": "https://raw.githubusercontent.com/AlanLuna-00/ProyectoFinal-JS/master/images/image4.jpg"
     },
     {
@@ -32,6 +40,8 @@ export const database = [
         "id": 5,
         "title": "Nike Sb Delta Force",
         "category": "Informal",
+        "description": "Zapatilla deportiva, de Nike",
+        "stock": 25,
         "image": "https://raw.githubusercontent.com/AlanLuna-00/ProyectoFinal-JS/master/images/image5.jpg"
     },
     {
@@ -39,6 +49,8 @@ export const database = [
         "id": 6,
         "title": "Nike Air Force",
         "category": "Informal",
+        "description": "Zapatilla deportiva, de Nike",
+        "stock": 18,
         "image": "https://raw.githubusercontent.com/AlanLuna-00/ProyectoFinal-JS/master/images/image6.jpg"
     }
 ]

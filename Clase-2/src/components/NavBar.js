@@ -2,6 +2,8 @@ import React from 'react'
 import logo from '../logo.svg'
 import '../App.css'
 import CartWidget from './CartWidget.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 
 const stylesNavbar = {
     backgroundColor: '#333',
@@ -33,8 +35,6 @@ const stylesA = {
     fontSize: '20px',
 }
 
-
-
 const NavBar = () => {
     return (
         <div className="navbar" style={{margin:0, padding:0}}> 
@@ -62,4 +62,17 @@ const NavBar = () => {
     
 }
 
-export default NavBar;
+const RoutesNav = () => {
+    return (
+        <div className="container-fluid" style={{margin:0, padding:0}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route exact path="/home" element={<NavBar />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    )
+    
+}
+
+export default RoutesNav;

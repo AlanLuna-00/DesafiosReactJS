@@ -7,13 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const ItemListContainer = () => {
     const API = new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve(database);
-        }, 2000);
+            resolve(database)
+        }, 2000); 
       }
       )
       API
         .then((res) => {
-          console.log(res);
+          console.warn('API', res);
         })
         .catch((err) => {
           console.log(err);
