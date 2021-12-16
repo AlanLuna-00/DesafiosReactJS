@@ -2,8 +2,6 @@ import React from 'react'
 import logo from '../logo.svg'
 import '../App.css'
 import CartWidget from './CartWidget.js'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ItemCount from './ItemCount'
 
 
 const stylesNavbar = {
@@ -63,17 +61,6 @@ const NavBar = () => {
     
 }
 
-const RoutesNav = () => {
-    return (
-        <div className="container-fluid" style={{margin:0, padding:0}}>
-            <BrowserRouter>
-                <Routes>
-                    <Route exact path="/count" element={<ItemCount />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
-    )
-    
-}
+
 
 export default NavBar;
