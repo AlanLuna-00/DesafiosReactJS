@@ -1,6 +1,6 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Link } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css' 
+import { NavLink } from 'react-router-dom'
 
 
 const Item = ({ item }) => {
@@ -11,7 +11,7 @@ const Item = ({ item }) => {
                     <div className="card-body">
                         <h4 className="card-title">{item.title}</h4>
                         <p className="card-text text-weight">$ {item.precio}</p>
-                        <Link to="/" className="btn btn-outline-dark" id={item.id}>Comprar</Link>
+                        <NavLink to={`/item/${item.id}`} className="btn btn-outline-dark" id={item.id}>Comprar</NavLink>
                     </div>
             </div>
             </>
