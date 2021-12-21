@@ -2,7 +2,7 @@ import React from 'react'
 import '../../App.css'
 import {database} from '../../database/database'
 import ItemList from './ItemList'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const ItemListContainer = () => {
@@ -20,10 +20,13 @@ const ItemListContainer = () => {
           console.log(err);
         })
     return (
-        <div className="container row m-3 d-flex justify-content-center align-items-center">
-            <>
-                <ItemList />
-            </> 
+        <div className="container">
+          <div className="row d-flex justify-content-center align-items-center">
+            <h1 className="text-center">Productos!</h1>
+              <>
+                  <ItemList />
+              </> 
+          </div>
         </div>
     )
 }

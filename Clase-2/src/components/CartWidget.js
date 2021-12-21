@@ -10,7 +10,6 @@ const CartWidget = () => {
         color: 'white',
         fontSize: '26px',
         padding: '0',
-        marginTop: '5px'
     }
     return ( 
             <FontAwesomeIcon icon={faShoppingCart} style={stylesWidgetCart} />

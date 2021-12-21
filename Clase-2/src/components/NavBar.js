@@ -1,62 +1,37 @@
 import React from 'react'
-import logo from '../logo.svg'
 import '../App.css'
 import CartWidget from './CartWidget.js'
+import { Link } from 'react-router-dom'
 
-
-const stylesNavbar = {
-    backgroundColor: '#333',
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    alingItems: 'center',
-}
-
-const stylesLogoNav = {
-    width: '60px',
-    height: '60px',
-}
-
-const stylesUl = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alingItems: 'center',
-}
-
-const stylesLi = {
-    listStyle: 'none',
-}
-
-const stylesA = {
-    color: '#fff',
-    textDecoration: 'none',
-    padding: '0px 10px',
-    fontSize: '20px',
-}
 
 const NavBar = () => {
     return (
-        <div className="navbar" style={{margin:0, padding:0}}> 
-            <nav style={stylesNavbar}>
-                <img src={logo} className="logoNav" style={stylesLogoNav} alt="Logo" />
-                <ul style={stylesUl}>
-                    <li style={stylesLi}>
-                        <a style={stylesA} href="/">Home</a>
+        <header>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div className="container-fluid">
+                <Link to="/"className="navbar-brand marca-nombre">SportShoes</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse barra-nav" id="navbarNav">
+                <ul className="navbar-nav ms-auto">
+                    <li className="nav-item">
+                    <Link to="/" className="nav-link">Home</Link>
                     </li>
-                    <li style={stylesLi}>
-                        <a style={stylesA} href="/about">About</a>
+                    <li className="nav-item">
+                    <Link to="/category/informal" className="nav-link">Informales</Link>
                     </li>
-                    <li style={stylesLi}>
-                        <a style={stylesA} href="/contact">Contact</a>
+                    <li className="nav-item">
+                    <Link to="/category/deportivas" className="nav-link" href="#">Deportivas</Link>
                     </li>
-                    <li style={stylesLi}>
-                        <a style={stylesA} href="/cart">
-                        <CartWidget />
-                        </a>
+                    <li className="nav-item">
+                    <Link to="/cart" className="nav-link"><CartWidget /></Link>
                     </li>
                 </ul>
-            </nav> 
-        </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     )
     
 }

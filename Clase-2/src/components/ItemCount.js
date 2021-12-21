@@ -14,15 +14,13 @@ const ItemCount = () => {
     }
 
     return (
-        <div className="card shadow w-25 m-3">
-            <div className="row d-flex justify-content-between">
-                    <button className="btn btn-outline-danger col-4 mt-3 ms-3" onClick={remove}> - </button>
-                    <button className="btn btn-outline-success col-4 mt-3 me-3" onClick={add}> + </button>
-                </div>
-                <div className="row count d-flex justify-content-center">
-                        <h1 className="col-12 d-flex justify-content-center">
+        <div className="">
+                <div className="d-flex">
+                    <button className="btn btn-outline-danger" onClick={remove}> - </button>
+                        <h5 className="font-weight m-3">
                             {number}
-                        </h1>
+                        </h5>
+                    <button className="btn btn-outline-success" onClick={add}> + </button>
                 </div>
         </div>
     )
