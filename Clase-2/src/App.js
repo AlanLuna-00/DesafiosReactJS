@@ -4,7 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 // import ItemCount from './components/ItemCount';
-import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ItemDetailContainer } from './components/ItemListContainer/ItemDetailContainer';
 
 
