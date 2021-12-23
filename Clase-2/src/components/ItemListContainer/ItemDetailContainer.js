@@ -15,7 +15,8 @@ export const ItemDetailContainer = () => {
         });
         mostrarProductos
         .then((res) => {
-            const product = res.find(p => p.id === id)
+            const product = res.find((p) => p.id === Number(id))
+            console.log(product)    
             setItem(product)
         })
         .catch((err) => {
